@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Farishadibrata/react-excel-test/static/css/main.073c9b0a.css",
+    "main.js": "/Farishadibrata/react-excel-test/static/js/main.b1b9ac49.js",
+    "static/js/787.4dcca8cd.chunk.js": "/Farishadibrata/react-excel-test/static/js/787.4dcca8cd.chunk.js",
+    "static/media/logo.svg": "/Farishadibrata/react-excel-test/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/Farishadibrata/react-excel-test/index.html",
+    "main.073c9b0a.css.map": "/Farishadibrata/react-excel-test/static/css/main.073c9b0a.css.map",
+    "main.b1b9ac49.js.map": "/Farishadibrata/react-excel-test/static/js/main.b1b9ac49.js.map",
+    "787.4dcca8cd.chunk.js.map": "/Farishadibrata/react-excel-test/static/js/787.4dcca8cd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.b1b9ac49.js"
+  ]
+}
