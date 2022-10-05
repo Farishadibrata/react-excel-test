@@ -5,6 +5,6 @@ import svgrPlugin from 'vite-plugin-svgr';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "https://farishadibrata.github.io/react-excel-test",
+  // base: "https://farishadibrata.github.io/react-excel-test",
   plugins: [react(), viteTsconfigPaths(), svgrPlugin()],
 });

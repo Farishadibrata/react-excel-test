@@ -1,6 +1,7 @@
 import ExcelJS from "exceljs";
 import FileSaver from "file-saver";
-const ExportExcel = async () => {
+import { useState } from "react";
+const ExportExcel = async (visibleColumns : string[], data :any) => {
   const dropdownItems = [
     {
       document_type: "BFD",
@@ -23,19 +24,16 @@ const ExportExcel = async () => {
   ];
   wsHidden.addRows(dropdownItems);
 
-  templateSheet.columns = [
-    { header: "Id", key: "id", width: 10 },
-    { header: "Name", key: "name", width: 20 },
-    { header: "Dropdown", key: "multiplekey", width: 20 },
-    { header: "Multiple Key", key: "multiplekey", width: 20 },
-  ];
 
+  templateSheet.columns = visibleColumns;
+
+
+  templateSheet.addRows(data)
   templateSheet.getCell("C2").dataValidation = {
     type: "list",
     allowBlank: true,
     formulae: ["=HiddenDocumentType!$A$2:$A$9999"],
   };
-
   const buffer = await workbook.xlsx.writeBuffer();
   const blob = new Blob([buffer], {
     type: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
